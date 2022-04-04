@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Кредитний калькулятор</title>
+</head>
+
+<body>
+  <section class="story">
+
+    <div class="body__left">
+      <h3>Кредитний калькулятор</h3>
+
+      <form name="form">
+
+        <label for="bank">Банк</label>
+        <input class="bank" placeholder="Вкажіть назву банку" name="bank">
+
+        <label for="summa"> Сума, грн</label>
+        <input class="number" placeholder="Вкажіть суму кредиту від 10 000 до 1 000 000" name="summa">
+
+        <label for="rate">Відсоткова ставка, %</label>
+        <input class="rate" placeholder="Введіть відсоткову ставку від 1% до 26%" name="rate">
+
+        <label for="time">Строк кредиту, міс</label>
+        <input class="time" placeholder="Введіть строк кредиту від 6 до 360 міс." name="time">
+
+
+        <button type="button" name="btnAdd" class="button">Зберегти</button>
+        <button type="button" name="btnEdit" class="button editList">Оновити</button>
+      </form>
+    </div>
+
+
+
+    <div class="body__right">
+      <form name="form2">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Банк</th>
+              <th scope="col">Сума</th>
+              <th scope="col">Ставка</th>
+              <th scope="col">Строк</th>
+              <th scope="col" class="green">Відсотковий платіж</th>
+              <th scope="col" class="green">Щомісячна сума</th>
+              <th scope="col" class="green">Загальна сума</th>
+              <th scope="col">Дія</th>
+            </tr>
+          </thead>
+          <tbody class="tbody">
+
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </section>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
